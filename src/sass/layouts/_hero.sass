@@ -1,0 +1,32 @@
+.grid-areas
+    display: grid
+    grid-template-columns: repeat(6, 1fr)
+    grid-template-rows: repeat(5, 1fr)
+    grid-template-areas: "heading heading heading heading heading cta" "mentor mentor . about about shape" "mentor mentor . testimonial testimonial testimonial" "mentor mentor trailer testimonial testimonial testimonial" ". . trailer . . ."
+
+    &__heading
+        grid-area: heading
+    &__cta
+        grid-area: cta
+    &__mentor
+        grid-area: mentor
+    &__about
+        grid-area: about
+    &__shape
+        grid-area: shape
+    &__trailer
+        grid-area: trailer
+    &__testimonial
+        grid-area: testimonial
+
+.header-hero
+    position: relative
+    z-index: 2
+    aspect-ratio: 6/5
+    padding-top: 400px
+
+.card
+    position: relative
+    &--shape
+        transform: translateX(100%)
+        background: #353535

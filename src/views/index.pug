@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Demo Grid
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="css/app.css")
+    body
+        .bg-lines
+            .container.lines
+                span 
+                span 
+                span 
+                span
+                span
+                span
+                span
+        header.container.grid-areas.header-hero
+            //- heading
+            section.grid-areas__heading.card.card--heading
+                include sections/heading.pug
+
+            //- cta
+            section.grid-areas__cta.card.card--cta
+                .the-dots
+                include sections/cta.pug
+
+            //- mentor
+            section.grid-areas__mentor.card.card--mentor
+                include sections/mentor.pug
+
+            //- about
+            section.grid-areas__about.card.card--about
+                include sections/about.pug
+
+            //- shape
+            section.grid-areas__shape.card.card--shape
+
+            //- trailer
+            section.grid-areas__trailer.card.card--trailer
+                include sections/trailer.pug
+
+            //- Testimonial
+            section.grid-areas__testimonial.card.card--testimonial
+                include sections/testimonial.pug
